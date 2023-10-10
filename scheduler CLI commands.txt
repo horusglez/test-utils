@@ -1,0 +1,20 @@
+scheduler-cli create-period --name "MF701-start" --begintime 07:00 --endtime 23:59 --weekdays mon-fri --stack pruebas-2-schedules --region us-west-2
+scheduler-cli create-period --name "MF701-start-stop" --begintime 00:00 --endtime 01:00 --weekdays mon-fri --stack pruebas-2-schedules --region us-west-2
+
+
+
+scheduler-cli create-schedule --name MF701 --periods MF701-start, MF701-stop  --timezone America/Bogota --stack pruebas-2-schedules --region us-west-2
+
+
+#mon-fri-830-2200
+
+scheduler-cli create-period --name "mon-fri-830-2200-per" --begintime 08:30 --endtime 22:00 --weekdays mon-fri --stack InstanceScheduler --region us-west-2
+
+scheduler-cli create-schedule --name mon-fri-830-2200 --periods mon-fri-830-2200-per --timezone America/Santiago --stack InstanceScheduler --region us-west-2
+
+
+#sat-sun-0900-2200
+
+scheduler-cli create-period --name "sat-sun-0900-1800-per" --begintime 09:00 --endtime 18:00 --weekdays sat-sun --stack InstanceScheduler --region us-west-2
+
+scheduler-cli create-schedule --name sat-sun-0900-1800 --periods sat-sun-0900-1800-per --timezone America/Santiago --stack InstanceScheduler --region us-west-2

@@ -1,0 +1,20 @@
+git checkout -b "branch_name"  COMANDO PARA CREAR TU PROPIA RAMA Y AHI "GUARDAR" LOS CAMBIOS QUE SE ESTÁN HACIENDO EN EL MOMENTO.
+git checkout -b "# de ticket"
+
+code layers - COMANDO PARA ABRIR VISUAL DIRECTAMENTE EN EL REPO EN EL QUE SE ESTÁ TRABAJANDO.
+
+
+terraform fmt - COMANDO PARA dar formato a "Formatear" terraform y validar sí versiones son iguales o diferentes en el codigo.
+
+git status - COMANDO PARA MOSTRAR LOS CAMBIOS "locales" y checar cuales van a ser agregados al branch.
+
+git add -A COMANDO PARA INDICAR QUE ARCHIVOS MODIFICADOS SERÁN AGREGADOS AL BRANCH, (En caso de usar -A y no definir un archivo en especifico,
+se agregarán TODOS los cambios hechos en cualquier archivo.)
+
+git commit -m  "" COMANDO PARA PREPARAR TODOS LOS CAMBIOS LOCALES y poder subirlos al repositorio -m es para agregar un comentario sobre dichos cambios "elimine tal cosa"
+
+git push origin "nombre de branch" COMANDO PARA SUBIR TODOS LOS CAMBIOS HECHOS EN EL BRANCH LOCAL AL BRANCH REMOTO (Repositorio directo en github).
+git push origin "# de ticket"
+
+ej:
+git push origin 220915-ord-0001108
